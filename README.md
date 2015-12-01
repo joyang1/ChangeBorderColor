@@ -1,0 +1,2 @@
+# ChangeBorderColor
+这是一个使用jQuery和css实现的为元素加边框以及动态修改边框颜色和背景颜色的Demo。
