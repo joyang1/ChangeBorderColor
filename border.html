@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('#change').click(function(){
+            $('p').css({"border-color":"#62D781","background-color":"#EAF7EE"});
+            $('#error').attr("src","img/success.jpg")
+         });
+         $('#close').click(function(){
+            $('p').hide();
+         });
+     });
+     </script>
+		<style type="text/css">
+			p {
+  				border-style: solid;
+  				border-top-width: 1px;
+  				border-right-width: 1px;
+  				border-bottom-width: 1px;
+  				border-left-width: 1px;
+  				border-color: #F5A0A0;
+  				background-color: #FCEEEE;
+  				width:540px;
+  				height: 30px;
+  				line-height: 30px
+  			}
+  			#close{
+  				float: right;
+  				margin-top: 7px
+  			}
+  			#error{
+  				float: left;
+  				margin-top: 7px 
+  			}
+		</style>
+	</head>
+
+	<body>
+		<p>dfsfsd<img src="img/info.jpg" id="error"><img src="img/close.jpg" id="close"></p>
+    <button id="change">change border</button>
+	</body>
+</html>
+
